@@ -1,0 +1,204 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: aliceblue;
+    
+}
+
+#container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.containerSol{
+    animation: sol 1s forwards;
+}
+
+@keyframes sol{
+    0%{
+        background-color: white;
+    }100%{
+        background-color: rgb(59, 59, 59);
+    }
+}
+
+.containerLua{
+    animation: lua 1s forwards;
+}
+
+@keyframes lua{
+    0%{
+        background-color: rgb(59, 59, 59);
+    }100%{
+        background-color: white;
+    }
+}
+
+#input{
+    height: 100px;
+    width: 250px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: inset 0px 0px 5px 3px rgba(0, 0, 0, 0.3);
+}
+
+
+#raio1{
+    background-color: rgba(199, 199, 199, 0.2);
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    margin-left: -30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#raio2{
+    background-color: rgba(199, 199, 199, 0.3);
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#raio3{
+    background-color: rgba(199, 199, 199, 0.4);
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#sol{
+    background-color: rgb(255, 166, 31);
+    height: 60%;
+    width: 60%;
+    border-radius: 100%;
+    box-shadow: 0px 0px 10px 1px rgba(250, 112, 0, 0.911);
+    cursor: pointer;
+}
+
+@keyframes anima{
+    0%{
+        margin-left: -30px;
+    }100%{
+        margin-left: 100px;
+    }
+}
+
+.animacaoVoltar{
+    animation: animaVoltar 1s forwards;
+}
+
+@keyframes animaVoltar{
+    0%{
+        margin-left: 100px;
+    }100%{
+        margin-left: -30px;
+    }
+}
+
+.animacao{
+    animation: anima 1s forwards;
+}
+
+/* lua */
+#lua{
+    background-color: rgb(107, 107, 107);
+    height: 60%;
+    width: 60%;
+    border-radius: 100%;
+    box-shadow: 0px 0px 10px 1px rgba(128, 128, 128, 0.911);
+    cursor: pointer;
+    position: absolute;
+    opacity: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes animaLua{
+    0%{
+        opacity: 0%;
+    }100%{
+        opacity: 100%;
+    }
+}
+
+@keyframes animaLuaVoltar{
+    0%{
+        opacity: 100%;
+    }100%{
+        opacity: 0%;
+    }
+}
+
+@keyframes animaSol{
+    0%{
+        opacity: 100%;
+    }100%{
+        opacity: 0%;
+    }
+}
+
+@keyframes animaSolVoltar{
+    0%{
+        opacity: 0%;
+    }100%{
+        opacity: 100%;
+    }
+}
+
+.animacaoLua{
+    animation: animaLua 1s forwards;
+}
+
+.animacaoSol{
+    animation: animaSol 1s forwards;
+}
+
+.animacaoLuaVoltar{
+    animation: animaLuaVoltar 1s forwards;
+}
+
+.animacaoSolVoltar{
+    animation: animaSolVoltar 1s forwards;
+}
+
+#buraco1{
+    height: 12px;
+    width: 12px;
+    border-radius: 100%;
+    background-color: rgb(150, 150, 150);
+    margin-left: 10px;
+    box-shadow: inset 2px 2px 2px 1px rgba(0, 0, 0, 0.6);
+}
+
+#buraco2{
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    background-color: rgb(150, 150, 150);
+    margin-left: -20px;
+    box-shadow: inset 2px 2px 2px 1px rgba(0, 0, 0, 0.6);
+}
+
+#buraco3{
+    height: 17px;
+    width: 17px;
+    border-radius: 100%;
+    background-color: rgb(150, 150, 150);
+    margin-left: 10px;
+    box-shadow: inset 2px 2px 2px 1px rgba(0, 0, 0, 0.6);
+}
